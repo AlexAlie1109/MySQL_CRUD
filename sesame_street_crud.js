@@ -5,16 +5,16 @@ const command = process.argv[2];
 // console.log(command);
 
 
-const databaseCredentials = {
-  user: 'root',
-  password: '',
-  database: 'first_sql',
-  host: 'localhost',
-  port: 3306
-};
+// const databaseCredentials = {
+//   user: 'root',
+//   password: '',
+//   database: 'first_sql',
+//   host: 'localhost',
+//   port: 3306
+// };
 
-const databaseString =  "mysql://root:@localhost:3306/first_sql"
-// console.log(databaseString);
+const databaseString =  process.env.LOCAL_DATABASE
+console.log(databaseString);
 const databaseConnection = mysql.createConnection(databaseString);
 let readAll = "SELECT * FROM sesameStreet";
 
