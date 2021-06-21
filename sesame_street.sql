@@ -1,4 +1,4 @@
-USE first_sql;
+USE np7sb94yy18rw3bb;                 
 
 CREATE TABLE sesameStreet (
   id SERIAL PRIMARY KEY,
